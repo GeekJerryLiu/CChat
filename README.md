@@ -14,6 +14,10 @@ May God and Buddha bless us.
 * Python 2.7 with socket
 * Fully Network Connection
 
+## Run
+
+For most of environments, try ```python2.7 gui.py```.
+
 ## Licence
 
 Shambhala is open-sourced in GNU General Public License v3.0.
