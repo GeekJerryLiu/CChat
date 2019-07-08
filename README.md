@@ -9,9 +9,9 @@ Enjoy, and be safe.
 
 May God and Buddha bless us.
 
-## Require
+## Requirement
 
-* Python2.7 with socket
+* Python 2.7 with socket
 * Fully Network Connection
 
 ## Licence
