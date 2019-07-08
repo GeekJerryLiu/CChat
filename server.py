@@ -14,5 +14,7 @@ while 1:
     if msg!="":
         if msg[0]=='0':
             print '[TEXT]'+'['+addr[0]+'] '+msg[1:]
+        if msg[0]=='1':
+        	print 'User Registered : '+msg[1:]
             
 s.close()
