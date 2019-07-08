@@ -9,4 +9,15 @@ Enjoy, and be safe.
 
 May God and Buddha bless us.
 
+## Require
+
+* Python2.7 with socket
+* Fully Network Connection
+
+## Licence
+
+Shambhala is open-sourced in GNU General Public License v3.0.
+
 **Warning: Shambhala is now only a demo in local. Do not run it in a production environment.**
+
+
