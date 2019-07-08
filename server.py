@@ -1,4 +1,5 @@
 import socket
+
 s=socket.socket()
 
 #set a connection
@@ -12,9 +13,12 @@ while 1:
     conn,addr=s.accept()
     msg=conn.recv(1024)
     if msg!="":
+    	#classify
         if msg[0]=='0':
+        	#format: [TEXT][IP] CONTENT
             print '[TEXT]'+'['+addr[0]+'] '+msg[1:]
         if msg[0]=='1':
+        	#format: "User Registered : USERNAME"
         	print 'User Registered : '+msg[1:]
             
 s.close()

@@ -18,22 +18,26 @@ Supported Options:
 
 input_tip="Type your command:"
 
+#send messages to server
 def send(text,code):
 	"""
 	CODE
 	0 Normal Text
 	1 System Setting
 	"""
+	#call client.py to send
 	if code==0:
+		#call in this way might be dangerous, it will be fixed in next large upgrade.
 		commands.getoutput("python2.7 client.py "+'0'+text)
 	if code==1:
 		commands.getoutput("python2.7 client.py "+'1'+text)
 
 def main():
 	username=raw_input("Set your username:")
+	#send username to server for log
 	send(username,1)
 	print menu_text
-	while 1:
+	while True:
 		print input_tip,
 		command=raw_input()
 		if command=='1':
