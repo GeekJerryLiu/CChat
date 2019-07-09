@@ -9,4 +9,4 @@ try:
 	s.close()
 	print "Sent Successfully."
 except socket.error,e:
-	print "[CChat] Cannot connect to remote server."
+	print "[Shambhala] Cannot connect to remote server."

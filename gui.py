@@ -30,7 +30,11 @@ def send(text,code):
 		#call in this way might be dangerous, it will be fixed in next large upgrade.
 		commands.getoutput("python2.7 client.py "+'0'+text)
 	if code==1:
-		commands.getoutput("python2.7 client.py "+'1'+text)
+		commands.getoutput("python2.7 client.py "+'101'+text)
+def recieve():
+	rec_addr,rec_msg=commands.getoutput("python2.7 receive.py ")
+	return rec_addr,rec_msg
+	
 
 def main():
 	username=raw_input("Set your username:")
@@ -43,7 +47,12 @@ def main():
 		if command=='1':
 			pass
 		if command=='2':
-			send("hello",0)
+			#There should be a interface like vim or nano that user can type words in it. it's a hard work.
+			#at the moment, you can only send one-line messages.
+			msg=raw_input("Type your words(ends with a enter): ")
+			send('\"'+msg+'\"',0)
+		if command=='3':
+			print receive()
 
 if __name__ == '__main__':
 	main()

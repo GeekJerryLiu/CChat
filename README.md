@@ -1,6 +1,6 @@
 # Shambhala
 
-Shambhala is used to protect your personal information and your privacy. You can add add-ons to make Shambhala more and more diverse.
+Shambhala is a communicating application that used to protect your personal information and your privacy. You can add add-ons to make Shambhala more and more diverse.
 
 We believe in the world, we can find a place just like Shambhala, pure and glorious.
 
